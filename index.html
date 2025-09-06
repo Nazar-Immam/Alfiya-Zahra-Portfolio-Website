@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfiya Zahra - DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="pipeline-bg" id="pipelineBg"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">ALFIYA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="dashboard-toggle" onclick="toggleDashboard()">Dashboard Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Alfiya Zahra</h1>
+            <div class="typing-animation" id="typingText"></div>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-btn">View My Projects</a>
+                <a href="./assests/Alfiya Resume.pdf" class="cta-btn">Download Resume</a>
+            </div>
+        </div>
+        <!-- Floating containers will be added via JS -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="profile-card">
+                <div class="profile-img">AZ</div>
+                <h3>Alfiya Zahra</h3>
+                <p>DevOps Engineer</p>
+            </div>
+            <div class="about-text">
+                <p>Passionate DevOps Engineer with expertise in cloud infrastructure, automation, and CI/CD pipelines. I transform complex 
+                    deployment challenges into streamlined, automated solutions that drive business efficiency.</p><br/>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Education</h4>
+                        <p>Foundation in Computer Science & Engineering</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>QA Engineer</h4>
+                        <p>Quality Assurance & Testing Specialist</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>DevOps Engineer @ UST Global</h4>
+                        <p>Cloud Infrastructure & Automation Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>DevOps & Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Scripting & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Ubuntu</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Methodologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Infrastructure as Code</span>
+                    <span class="skill-tag">Monitoring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>E-Commerce DevOps Implementation</h3>
+                </div>
+                <div class="project-body">
+                    <p>Complete CI/CD pipeline implementation with GitHub Actions, Terraform infrastructure provisioning, and Kubernetes deployment using Argo CD on AWS EKS.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Argo CD</span>
+                        <span class="tech-tag">AWS EKS</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="https://github.com/alfiya-zahra" id="code" >View Code →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Lift & Shift Migration</h3>
+                </div>
+                <div class="project-body">
+                    <p>Successfully migrated multi-tier application to AWS cloud using EC2, ELB, Auto Scaling Groups, and RDS with zero downtime deployment.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS EC2</span>
+                        <span class="tech-tag">ELB</span>
+                        <span class="tech-tag">Auto Scaling</span>
+                        <span class="tech-tag">RDS</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="https://github.com/alfiya-zahra" id="code" >View Code →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>CI/CD Pipeline on AWS</h3>
+                </div>
+                <div class="project-body">
+                    <p>Automated deployment pipeline using AWS CodePipeline, CodeBuild, and Elastic Beanstalk with automated testing and monitoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS CodePipeline</span>
+                        <span class="tech-tag">CodeBuild</span>
+                        <span class="tech-tag">Elastic Beanstalk</span>
+                        <span class="tech-tag">CloudWatch</span>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="https://github.com/alfiya-zahra" id="code" >View Code →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="#" class="contact-link">
+                    <span>📧</span>
+                    <span>alfiya.zahra@example.com</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span>💼</span>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span>🐱</span>
+                    <span>GitHub Profile</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span></span>
+                    <span>X (twitter)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Easter Egg -->
+    <div class="terminal" id="terminal">
+        <div class="terminal-header">
+            <div class="terminal-btn close" onclick="closeTerminal()"></div>
+            <div class="terminal-btn minimize"></div>
+            <div class="terminal-btn maximize"></div>
+        </div>
+        <div class="terminal-body">
+            <div>$ <input type="text" class="terminal-input" id="terminalInput" placeholder="Try typing 'kubectl get pods'"></div>
+            <div id="terminalOutput"></div>
+        </div>
+    </div>
+
+    <!-- Dashboard Mode -->
+    <div class="dashboard-mode" id="dashboardMode">
+        <button class="dashboard-toggle" onclick="toggleDashboard()" style="position: absolute; top: 20px; right: 20px;">Exit Dashboard</button>
+        <div class="dashboard-grid">
+            <div class="dashboard-widget">
+                <h3>Pipeline Status</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p>Build: ✅ Success</p>
+                <p>Test: ✅ Passed</p>
+                <p>Deploy: 🔄 In Progress</p>
+            </div>
+            <div class="dashboard-widget">
+                <h3>Container Health</h3>
+                <p>🟢 Frontend: 3/3 pods running</p>
+                <p>🟢 Backend: 2/2 pods running</p>
+                <p>🟢 Database: 1/1 pod running</p>
+            </div>
+            <div class="dashboard-widget">
+                <h3>AWS Services</h3>
+                <p>🟢 EC2 Instances: 5 running</p>
+                <p>🟢 RDS: Connected</p>
+                <p>🟢 Load Balancer: Healthy</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
