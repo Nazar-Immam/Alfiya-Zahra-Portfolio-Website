@@ -49,14 +49,15 @@ function createPipeline() {
 // Create floating containers
 function createFloatingContainers() {
     const hero = document.querySelector('.hero');
-    for (let i = 0; i < 6; i++) {
+    // floating box loop
+  /*  for (let i = 0; i < 6; i++) {
         const container = document.createElement('div');
         container.className = 'floating-container';
         container.style.left = Math.random() * window.innerWidth + 'px';
         container.style.top = Math.random() * window.innerHeight + 'px';
         container.style.animationDelay = Math.random() * 6 + 's';
         hero.appendChild(container);
-    }
+    } */
 }
 
 // Terminal functionality
@@ -363,3 +364,4 @@ console.log('💡 Try these keyboard shortcuts:');
 console.log('   Ctrl + D: Toggle Dashboard Mode');
 console.log('   Ctrl + T: Toggle Terminal');
 console.log('🎯 Double-click AWS skill tag to see certification!');
+
